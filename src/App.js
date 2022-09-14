@@ -6,12 +6,16 @@ import './App.css';
 import Grid from '@mui/material/Grid';
 import ResponsiveAppBar from './components/header'
 import Box from '@mui/material/Box';
-
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle'
 function App() {
   return (
     <>
+
       <ResponsiveAppBar />
-      <div style={{ height: "calc(100vh - 110px)" }}>
+      <Alert severity="warning" ><AlertTitle>Disclaimer</AlertTitle> All content on this site is for educational purposes only.</Alert>
+
+      {/* <div style={{ height: "calc(100vh - 110px)" }}> */}
         <Box sx={{ flexGrow: 1 }} >
           <Grid container spacing={2} style={{ margin: 15 }}>
             <BrowserRouter>
@@ -25,11 +29,11 @@ function App() {
           </Grid>
 
         </Box>
-      </div>
+      {/* </div> */}
 
-      <div style={{ textAlign: 'right', marginRight:'20px',fontSize:'.1em' }}>
+      {/* <div style={{ textAlign: 'right', marginRight: '20px', fontSize: '.1em' }}>
         App: {process.env.REACT_APP_NAME} {process.env.REACT_APP_VERSION}
-      </div>
+      </div> */}
     </>
   );
 }
