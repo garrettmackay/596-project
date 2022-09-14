@@ -6,7 +6,6 @@ import './App.css';
 import Grid from '@mui/material/Grid';
 import ResponsiveAppBar from './components/header'
 import Box from '@mui/material/Box';
-import Paper from "@mui/material/Paper";
 
 function App() {
   return (
