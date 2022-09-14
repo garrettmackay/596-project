@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 const pages = [
-  { title: 'Industry Background', path: "/industry" },
+  { title: 'Industry Background', path: "industry" },
   { title: 'Threat Modelling', path: 'threats' },
   { title: 'About Us', path: 'team' }];
 
