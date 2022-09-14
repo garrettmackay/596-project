@@ -1,11 +1,9 @@
-import { ReactDOM } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import IndustryPage from './pages/industry';
 import ThreatPage from './pages/threat';
 import TeamPage from './pages/team';
 import './App.css';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import ResponsiveAppBar from './components/header'
 import Box from '@mui/material/Box';
 function App() {
