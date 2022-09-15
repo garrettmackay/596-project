@@ -15,9 +15,8 @@ function App() {
       <ResponsiveAppBar />
       <Alert severity="warning" ><AlertTitle>Disclaimer</AlertTitle> All content on this site is for educational purposes only.</Alert>
 
-      <div style={{ height: "calc(100vh - 170px)" }}>
-      <Box sx={{ flexGrow: 1,padding:4 }} >
-        <Grid container spacing={2}>
+      <Box sx={{ flexGrow: 1 }} >
+        <Grid container >
           <Routes>
             <Route index path='' element={<IndustryPage />} />
             <Route path='industry' element={<IndustryPage />} />
@@ -27,11 +26,7 @@ function App() {
         </Grid>
 
       </Box>
-      </div>
-
-      <div style={{ textAlign: 'right', marginRight: '20px', fontSize: '.1em' }}>
-        App: {process.env.REACT_APP_NAME} {process.env.REACT_APP_VERSION}
-      </div>
+  
     </>
   );
 }

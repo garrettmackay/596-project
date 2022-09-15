@@ -13,7 +13,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import { useNavigate } from 'react-router-dom';
 const pages = [
   { title: 'Industry Background', path: "/industry" },
-  { title: 'Threat Modelling', path: '/threats' },
+  { title: 'Threat Modeling', path: '/threats' },
   { title: 'About Us', path: '/team' }];
 
 const ResponsiveAppBar = () => {
@@ -38,8 +38,7 @@ const ResponsiveAppBar = () => {
             component="a"
             href="/"
             sx={{
-              mr: 20,
-              ml: -20,
+              mr: 10,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Roboto',
               fontWeight: 700,
