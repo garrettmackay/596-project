@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/596-project/static/css/main.e6c13ad2.css",
+    "main.js": "/596-project/static/js/main.55fce001.js",
+    "static/js/787.bf68a82d.chunk.js": "/596-project/static/js/787.bf68a82d.chunk.js",
+    "static/media/daniel-braker.jpg": "/596-project/static/media/daniel-braker.e62a391c3b6fa99bb4c6.jpg",
+    "static/media/person.png": "/596-project/static/media/person.1a5f7ee0bb61df819b3e.png",
+    "static/media/michael-adelin.jpg": "/596-project/static/media/michael-adelin.a3555dc70ef77a8039c4.jpg",
+    "static/media/yana-almeida.png": "/596-project/static/media/yana-almeida.558dba31d45643677cb3.png",
+    "index.html": "/596-project/index.html",
+    "main.e6c13ad2.css.map": "/596-project/static/css/main.e6c13ad2.css.map",
+    "main.55fce001.js.map": "/596-project/static/js/main.55fce001.js.map",
+    "787.bf68a82d.chunk.js.map": "/596-project/static/js/787.bf68a82d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.55fce001.js"
+  ]
+}
