@@ -19,33 +19,41 @@ const teamInfo = [
         name: "Daniel Braker",
         image: daniel,
         bio: "lorem ipsum",
-        role:"Lead, Researcher"
+        role: "Lead, Researcher"
     },
     {
         name: 'Yana Almeida',
         image: yana,
         bio: "lorem ipsum",
-        role:"Analyst, Critical Assets"
+        role: "Analyst, Critical Assets"
     },
     {
         name: "Michael Edelin",
         image: michael,
-        bio:"lorem impsum",
+        bio: "lorem impsum",
         role: "Executive Advisor, Cybersecurity"
     },
     {
         name: "Garrett MacKay",
         image: garrett,
-        bio:"lorem impsum",
+        bio: "lorem impsum",
         role: "Engineer, Trucking Industry"
     },
     {
         name: "Baskar Rao",
         image: baskar,
-        bio:"lorem impsum",
+        bio: "lorem impsum",
         role: 'Data Scientist, Cybersecurity Modeling'
     }
 ];
+const styles = {
+    card: {
+        main: { display: 'flex', m: 2, p: 1},
+        box: { display: 'flex', flexDirection: 'column', width: '300px' },
+        avatar: { width: 125, height: 125,mt:1.5}
+    }
+
+}
 const TeamPage = () => {
     return (<Container maxWidth='xl'>
         <Grid item xs={12} sx={{ textAlign: 'center' }}>
@@ -56,17 +64,17 @@ const TeamPage = () => {
         }}>
             {teamInfo.map(p =>
             (
-                <Card sx={{ display: 'flex', m: 1,  p: 1 }} key={p.name}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
-                        <CardHeader title={p.name} subheader={p.role}/>
-                        <CardContent>
+                <Card sx={{ ...styles.card.main }} key={p.name}>
+                    <Box sx={{ ...styles.card.box }}>
+                        <CardHeader title={p.name} subheader={p.role} sx={{mb:-4}}/>
+                        <CardContent >
                             {/* <Typography component='div' variant='p'> */}
-                                {p.bio}
+                            <p>{p.bio}</p>
                             {/* </Typography> */}
                         </CardContent>
                     </Box>
-                    <Avatar src={p.image} sx={{width:125,height:125}}/>
-                    
+                    <Avatar src={p.image} sx={{ ...styles.card.avatar }} />
+
                 </Card>
             ))}
         </Box>

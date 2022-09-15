@@ -8,25 +8,39 @@ import ResponsiveAppBar from './components/header'
 import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle'
+import Container from '@mui/material/Container';
+import background from './images/background-1.jpg'
+const styles = {
+  alert: {
+    mt: 3, mb: 1
+  },
+  pages: {
+    flexGrow: 1
+  }
+}
+
 function App() {
+
+
   return (
     <>
 
       <ResponsiveAppBar />
-      <Alert severity="warning" ><AlertTitle>Disclaimer</AlertTitle> All content on this site is for educational purposes only.</Alert>
-
-      <Box sx={{ flexGrow: 1 }} >
-        <Grid container >
-          <Routes>
-            <Route index path='' element={<IndustryPage />} />
-            <Route path='industry' element={<IndustryPage />} />
-            <Route path='team' element={<TeamPage />} />
-            <Route path='threats' element={<ThreatPage />} />
-          </Routes>
+      <Container maxWidth='xl'>
+        <Grid container direction='column'>
+          <Alert severity="warning" sx={{ ...styles.alert }}>
+            <AlertTitle>Disclaimer</AlertTitle> All content on this site is for educational purposes only.
+          </Alert>
+          <Box sx={{ ...styles.pages }} >
+            <Routes>
+              <Route index path='' element={<TeamPage />} />
+              <Route path='industry' element={<IndustryPage />} />
+              <Route path='team' element={<TeamPage />} />
+              <Route path='threats' element={<ThreatPage />} />
+            </Routes>
+          </Box>
         </Grid>
-
-      </Box>
-  
+      </Container>
     </>
   );
 }
