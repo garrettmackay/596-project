@@ -29,7 +29,7 @@ const ResponsiveAppBar = () => {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{bgcolor:'#b4363c'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -46,7 +46,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            T596 Team 1
+            T596 Team 1 - Cybersecurity for Truck Carriers
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -58,7 +58,7 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <LocalShippingIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -88,7 +88,6 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <LocalShippingIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -106,7 +105,7 @@ const ResponsiveAppBar = () => {
           >
             T596 Team 1
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
 
               <Button
