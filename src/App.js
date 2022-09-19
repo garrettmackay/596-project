@@ -28,7 +28,7 @@ function App() {
           <AlertTitle>Disclaimer</AlertTitle> All content on this site is for educational purposes only.
         </Alert>
         <Routes>
-          <Route index path='' element={<TeamPage />} />
+          <Route index path='' element={<IndustryPage />} />
           <Route path='industry' element={<IndustryPage />} />
           <Route path='team' element={<TeamPage />} />
           <Route path='threats' element={<ThreatPage />} />

@@ -19,35 +19,35 @@ const teamInfo = [
     {
         name: "Daniel Braker",
         image: daniel,
-        bio: "lorem ipsum",
+        bio: "Research trucking industry specific cybersecurity resources, threats, and general information",
         role: "Lead, Researcher",
         url: "",
     },
     {
         name: 'Yana Almeida',
         image: yana,
-        bio: "lorem ipsum",
+        bio: "Determine critical cybersecurity assets and threat vectors",
         role: "Analyst, Critical Assets",
         url: "https://www.linkedin.com/in/yana-almeida/",
     },
     {
         name: "Michael Edelin",
         image: michael,
-        bio: "lorem impsum",
+        bio: "Responsible for achieving executive buy-in for cybersecurity investment",
         role: "Executive Advisor, Cybersecurity",
         url: "https://www.linkedin.com/in/michaeledelinjr/"
     },
     {
         name: "Garrett MacKay",
         image: garrett,
-        bio: "lorem impsum",
+        bio: "Trucking industry member and website developer",
         role: "Engineer, Trucking Industry",
         url: "https://www.linkedin.com/in/garrettmackay/"
     },
     {
         name: "Baskar Rao",
         image: baskar,
-        bio: "lorem impsum",
+        bio: "Uses critical asset analysis to create diamond models",
         role: 'Data Scientist, Cybersecurity Modeling'
     }
 ];
@@ -57,7 +57,6 @@ const styles = {
         box: { display: 'flex', flexDirection: 'column', width: '300px' },
         avatar: { width: 125, height: 125, mt: 1.5 }
     }
-
 }
 const TeamPage = () => {
     return (<Container maxWidth='xl'>
@@ -84,7 +83,6 @@ const TeamPage = () => {
                         </CardActions>
                     </Box>
                     <Avatar src={p.image} sx={{ ...styles.card.avatar }} />
-
                 </Card>
             ))}
         </Box>
