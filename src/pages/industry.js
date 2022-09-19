@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import trucking2 from '../images/truck-2.jpg'
 import trucking1 from '../images/truck-1.jpg'
 import trucking3 from '../images/truck-3.jpg'
-
+import ransom from '../images/ransom.jpg'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -141,11 +141,11 @@ const IndustryPage = () => {
             <Card sx={{ width: '100%', mt: 5 }}>
                 <Box sx={{ ...styles.head }} >
                     <Typography variant='h4'>
-                        Key Exploits Targeting the Industry
+                        Ransomware
                     </Typography>
                 </Box>
                 <Box sx={{ display: 'flex' }}>
-                    <CardMedia component='img' image={trucking3} sx={{ width: 250, display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' } }} />
+                    <CardMedia component='img' image={ransom} sx={{ width: 250, display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' } }} />
                     <CardContent>
                         <Card sx={{ ...styles.textCard }}>
                             <Typography variant='p'>
