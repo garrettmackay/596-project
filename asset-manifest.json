@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/596-project/static/css/main.e6c13ad2.css",
-    "main.js": "/596-project/static/js/main.c04d92fa.js",
+    "main.js": "/596-project/static/js/main.c19baaf2.js",
     "static/js/787.bf68a82d.chunk.js": "/596-project/static/js/787.bf68a82d.chunk.js",
     "static/media/truck-1.jpg": "/596-project/static/media/truck-1.6e76902023c1f94e03b4.jpg",
     "static/media/truck-3.jpg": "/596-project/static/media/truck-3.9d0995f9b310f61bc7b5.jpg",
@@ -23,11 +23,11 @@
     "static/media/yana-almeida.png": "/596-project/static/media/yana-almeida.558dba31d45643677cb3.png",
     "index.html": "/596-project/index.html",
     "main.e6c13ad2.css.map": "/596-project/static/css/main.e6c13ad2.css.map",
-    "main.c04d92fa.js.map": "/596-project/static/js/main.c04d92fa.js.map",
+    "main.c19baaf2.js.map": "/596-project/static/js/main.c19baaf2.js.map",
     "787.bf68a82d.chunk.js.map": "/596-project/static/js/787.bf68a82d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c04d92fa.js"
+    "static/js/main.c19baaf2.js"
   ]
 }
