@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const pages = [
   { title: 'Industry Background', path: "/industry" },
   { title: 'Threat Modeling', path: '/threats' },
+  { title: 'Data Sources', path: '/data' },
   { title: 'About Us', path: '/team' }];
 
 const ResponsiveAppBar = () => {
@@ -29,7 +30,7 @@ const ResponsiveAppBar = () => {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="static" sx={{bgcolor:'#b4363c'}}>
+    <AppBar position="static" sx={{ bgcolor: '#b4363c' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -105,7 +106,7 @@ const ResponsiveAppBar = () => {
           >
             T596 Team 1
           </Typography>
-          <Box sx={{flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
 
               <Button
