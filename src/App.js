@@ -1,9 +1,12 @@
+import React from 'react';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import Container from '@mui/material/Container';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import ResponsiveAppBar from './components/header';
+import DataPage from './pages/data';
+import GarminDataPage from './pages/garmin-data';
 import IndustryPage from './pages/industry';
 import TeamPage from './pages/team';
 import ThreatPage from './pages/threat';
@@ -32,6 +35,8 @@ function App() {
           <Route path='industry' element={<IndustryPage />} />
           <Route path='team' element={<TeamPage />} />
           <Route path='threats' element={<ThreatPage />} />
+          <Route path='data' element={<DataPage />} />
+          <Route path='data/garmin' element={<GarminDataPage />} />
         </Routes>
       </Container>
     </>
